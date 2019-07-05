@@ -1,0 +1,40 @@
+﻿<Window x:Class="micro_ondas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:micro_ondas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="494.164" Width="942.042">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="931*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Ligar" HorizontalAlignment="Left" Margin="70,73,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Height="20"/>
+        <TextBox x:Name="TimeInput" HorizontalAlignment="Left" Height="23" Margin="70,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <TextBox x:Name="PowerInput" HorizontalAlignment="Left" Height="23" Margin="70,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197"/>
+        <Label x:Name="lbTimeOn" Content="" HorizontalAlignment="Left" Margin="489,10,-18,0" VerticalAlignment="Top" Width="463" Height="83" Grid.ColumnSpan="2"/>
+        <Label Content="Tempo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="46"/>
+        <Label Content="Potencia" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Height="26" Width="55"/>
+        <Label Content="Programa" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Height="26" Width="67"/>
+        <TextBox x:Name="txtProgram" HorizontalAlignment="Left" Height="23" Margin="341,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Ligar por programa
+                " HorizontalAlignment="Left" Margin="160,73,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click_1" Height="20"/>
+        <TextBox x:Name="txtbLista" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Text="&#xD;&#xA;" Margin="10,120,493,45"/>
+        <Button Content="Todos programas" HorizontalAlignment="Left" Margin="341,70,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click_2" Height="20"/>
+        <Button Content="Buscar programa" HorizontalAlignment="Left" Margin="341,45,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click_3" Height="20"/>
+        <TextBox x:Name="novoTempo" HorizontalAlignment="Left" Height="23" Margin="579,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="novaPotencia" HorizontalAlignment="Left" Height="23" Margin="579,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="novoNome" HorizontalAlignment="Left" Height="23" Margin="579,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="novoCaractere" HorizontalAlignment="Left" Height="23" Margin="579,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.962,-3.201"/>
+        <TextBox x:Name="novoInstrucao" HorizontalAlignment="Left" Height="141" Margin="574,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Label Content="Tempo" HorizontalAlignment="Left" Margin="476,107,0,0" VerticalAlignment="Top"/>
+        <Label Content="Potencia" HorizontalAlignment="Left" Margin="476,151,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="476,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="caractere" HorizontalAlignment="Left" Margin="476,233,0,0" VerticalAlignment="Top"/>
+        <Label Content="Instrucao de uso" HorizontalAlignment="Left" Margin="476,277,0,0" VerticalAlignment="Top"/>
+        <Button Content="Inserir novo programa" HorizontalAlignment="Left" Margin="786,174,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>
