@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace micro_ondas.controllers
 {
-    public class Programs
+    public class GenericPrograms
     {
 
         List<Programa> programList = new List<Programa>();
@@ -15,12 +15,12 @@ namespace micro_ondas.controllers
 
         internal Programa searchByName(string text)
         {
-            Programa programaBuscado = ProgramList.Find(p => p.NomePrograma == text);
+            Programa programaBuscado = ProgramList.Find(p => p.ProgramName == text);
             if (programaBuscado == null)
             {
-                throw new System.ArgumentException("Nenhum programa encontrado para: " + text, "programa");
+                throw new ProgramNotFoudException("Nenhum programa encontrado para: " + text);
             }
-            return ProgramList.Find(p => p.NomePrograma == text);
+            return ProgramList.Find(p => p.ProgramName == text);
         }
     }
 }

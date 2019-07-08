@@ -12,9 +12,9 @@ namespace micro_ondas.controllers
         {
             this.Time = tempo;
             this.Power = potencia;
-            this.NomePrograma = nome;
-            this.InstrucoeUso = instrucoesDeUso;
-            this.CharEsquenta = cacacterFinaliza;
+            this.ProgramName = nome;
+            this.UseInstructions = instrucoesDeUso;
+            this.CharHeating = cacacterFinaliza;
         }
     }
 }

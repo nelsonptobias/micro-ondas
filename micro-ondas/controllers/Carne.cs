@@ -9,11 +9,11 @@ namespace micro_ondas
 
         public Carne()
         {
-            this.NomePrograma = "carne";
+            this.ProgramName = "carne";
             this.Time = 7;
             this.Power = 5;
-            this.InstrucoeUso = "instrucao de como enquentar sua carne";
-            this.CharEsquenta = "#";
+            this.UseInstructions = "instrucao de como enquentar sua carne";
+            this.CharHeating = "#";
         }
 
 

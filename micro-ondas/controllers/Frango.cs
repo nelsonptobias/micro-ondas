@@ -12,11 +12,11 @@ namespace micro_ondas.controllers
 
         public Frango()
         {
-            this.NomePrograma = "frango"; 
+            this.ProgramName = "frango"; 
             this.Time = 30;
             this.Power = 6;
-            this.InstrucoeUso = "instrucao de como enquentar seu flango com catupily";
-            this.CharEsquenta = "$";
+            this.UseInstructions = "instrucao de como enquentar seu flango com catupily";
+            this.CharHeating = "$";
 
         }
 

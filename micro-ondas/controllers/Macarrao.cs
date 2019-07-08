@@ -8,11 +8,11 @@ namespace micro_ondas
 
         public Macarrao()
         {
-            this.NomePrograma = "macarrao";
+            this.ProgramName = "macarrao";
             this.Time = 30;
             this.Power = 6;
-            this.InstrucoeUso = "instrucao de como enquentar seu miojo";
-            this.CharEsquenta = "@";
+            this.UseInstructions = "instrucao de como enquentar seu miojo";
+            this.CharHeating = "@";
         }
     }
 }

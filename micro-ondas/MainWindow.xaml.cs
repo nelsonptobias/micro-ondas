@@ -16,14 +16,12 @@ using System.Windows.Shapes;
 
 namespace micro_ondas
 {
-    /// <summary>
-    /// Interação lógica para MainWindow.xam
-    /// </summary>
+   
     public partial class MainWindow : Window
     {
         public Programa mOndas;
 
-        public Programs programas = new Programs();
+        public GenericPrograms programas = new GenericPrograms();
 
         
         public MainWindow()
@@ -51,7 +49,7 @@ namespace micro_ondas
                     return mOndas = new Macarrao();
                 } else if (txtProgram.Text.ToLower() != "")
                 {
-                    throw new System.ArgumentException("Nenhum programa encotrado para: " + txtProgram.Text, "programa");
+                    throw new System.ArgumentException("Nenhum program encotrado para: " + txtProgram.Text, "program");
                 } else
                 {
                     return mOndas = new Programa();
@@ -79,7 +77,7 @@ namespace micro_ondas
 
 
             }
-            catch (ArgumentException exc)
+            catch (Exception exc)
             {
                 MessageBox.Show(exc.GetType().FullName + ", " + exc.Message); 
             }
@@ -93,7 +91,7 @@ namespace micro_ondas
             {
                 lbTimeOn.Content = GetMicroOndas().turnOn();
             }  
-            catch (ArgumentException exc)
+            catch (Exception exc)
             {
                 MessageBox.Show(exc.GetType().FullName + ", " + exc.Message);
             }
@@ -124,7 +122,7 @@ namespace micro_ondas
                 mOndas = programas.searchByName(txtProgram.Text);
                 txtbLista.Text += "Programa encontrado : " + Environment.NewLine +
                 mOndas.print();
-            } catch (ArgumentException exc)
+            } catch (Exception exc)
             {
                 MessageBox.Show(exc.GetType().FullName + ", " + exc.Message);
             }                        
@@ -134,7 +132,7 @@ namespace micro_ondas
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            programas.ProgramList.Add(new ProgramaGenerico(Int32.            Parse(novoTempo.Text),
+            programas.ProgramList.Add(new ProgramaGenerico(Int32.Parse(novoTempo.Text),
                                                            Int32.Parse(novaPotencia.Text),
                                                            novoNome.Text,
                                                            novoInstrucao.Text,

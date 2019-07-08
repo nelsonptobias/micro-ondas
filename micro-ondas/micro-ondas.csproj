@@ -64,8 +64,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="controllers\Carne.cs" />
+    <Compile Include="controllers\Excetpion.cs" />
     <Compile Include="controllers\Frango.cs" />
-    <Compile Include="controllers\MicroOndas.cs" />
+    <Compile Include="controllers\Programa.cs" />
     <Compile Include="controllers\Macarrao.cs" />
     <Compile Include="controllers\ProgramaGenerico.cs" />
     <Compile Include="controllers\Programs.cs" />
